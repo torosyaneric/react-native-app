@@ -21,7 +21,8 @@ const buttonStyles = StyleSheet.create({
 
 class Home extends Component {
   static navigationOptions = {
-    title: "Change font size"
+    title: "Change font size",
+    headerTransparent: true
   };
 
   inputValue = React.createRef();
@@ -31,7 +32,7 @@ class Home extends Component {
       { fontSize, setFontSize } = this.props.screenProps;
 
     return (
-      <ScrollView style={{ paddingHorizontal: 10 }}>
+      <ScrollView style={{ paddingHorizontal: 10, paddingTop: 70 }}>
         <Text style={{ fontSize: 28, fontWeight: "200", marginBottom: 30 }}>
           Home.js
         </Text>
